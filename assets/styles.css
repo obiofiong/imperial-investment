@@ -824,6 +824,54 @@ td .login-btn {
 .vendor-col img{
 	width: 100%;
 }
+.copy-text{
+	position: relative;
+}
+input .text{
+	border: none;
+	outline: none;
+	color: #555;
+	font-size: 1.15rem;
+	padding: 0.5rem;
+}
+.copy-text button{
+	padding: 0.5rem;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	outline: none;
+	border-radius: 0.25rem;
+}
+.copy-text button:active{
+	opacity: 0.7;
+}
+.copy-text button::before{
+	content: "Copied";
+	position: absolute;
+	top: -63%;
+	left: 55%;
+	font-size: 1.15rem;
+	padding: 0.25rem 0.5rem;
+	background-color: #838ca3;
+	border-radius: 0.45rem;
+	color: var(--white);
+	display: none;
+}
+.copy-text button::after{
+	content: "";
+	position: absolute;
+	top: -10%;
+	left: 59%;
+	width: 10px;
+	height: 10px;
+	background-color: var(--brown);
+	transform: rotate(45deg);
+	display: none;
+}
+.copy-text.active button::before, .copy-text.active button::after{
+	display: block;
+}
+
 @media (max-width: 700px){
 	.vendors{
 		width: 60%;
@@ -960,31 +1008,7 @@ label{
 	border: 2px solid var(--brown);
 	color: var(--brown);
 }
-.risk-taking{
-	width: 42%;
-	margin: 2% auto;
-	border: 1px solid grey;
-	position: relative;
-	padding: 0 2%;
-	
-}
-.risk-text{
-	background-color: var(--white);
-	width: 20%;
-	margin: auto;
-	padding: 0.75rem;
-	position: absolute;
-	top: -1rem;
-	left: 40%;
-	text-align: center;
-}
-.risk-taking h5{
-	color: grey;
-}
-.risk-taking p{
-	margin-top: 7%;
-	color: grey;
-}
+
 @media (max-width: 700px) {
 	.account-form-div{
 		width: 60%;
