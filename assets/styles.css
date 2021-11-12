@@ -824,12 +824,18 @@ td .login-btn {
 .copy-text {
 	position: relative;
 }
-input .text {
+.copy-text input {
 	border: none;
 	outline: none;
 	color: #555;
 	font-size: 1.15rem;
 	padding: 0.5rem;
+	padding: 10px;
+	min-width: 300px;
+	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+	border: gray;
+	margin: 0 5px;
+	border-radius: 8px;
 }
 .copy-text button {
 	padding: 0.5rem;
