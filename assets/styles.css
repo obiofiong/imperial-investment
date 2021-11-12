@@ -543,10 +543,10 @@ td .login-btn {
 	}
 }
 
-/* IMPERIAL ABOUT */
-.imperial-about {
+/* Imperium ABOUT */
+.imperium-about {
 	background: linear-gradient(rgb(210 93 29 / 70%), rgba(4, 9, 30, 0.7)),
-		url("./img/imperial-about.jpg");
+		url("./img/imperium-about.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -554,23 +554,23 @@ td .login-btn {
 	color: white;
 	padding: 3% 5%;
 }
-.imperial-about h1 {
+.imperium-about h1 {
 	font-size: 2.65rem;
 	margin-bottom: 2%;
 }
 @media (max-width: 700px) {
-	.imperial-about h1 {
+	.imperium-about h1 {
 		font-size: 1.6rem;
 		margin-bottom: 5%;
 	}
 }
 
-/* IMPERIAL SERVICE */
-.imperial-service {
+/* imperium SERVICE */
+.imperium-service {
 	width: 85%;
 	margin: 5% auto;
 }
-.imperial-col {
+.imperium-col {
 	flex-basis: 32%;
 	border-radius: 1.25rem;
 	margin: 2%;
@@ -581,33 +581,33 @@ td .login-btn {
 	margin: auto;
 	text-align: center;
 }
-.imperial-col img {
+.imperium-col img {
 	width: 100%;
 }
-.imperial-col-card {
+.imperium-col-card {
 	display: flex;
 }
-.imperial-text {
+.imperium-text {
 	width: 70%;
 }
-.card-1 .imperial-icon {
+.card-1 .imperium-icon {
 	margin-left: 20px;
 }
-.card-2 .imperial-icon {
+.card-2 .imperium-icon {
 	margin-right: 20px;
 }
-.imperial-icon i {
+.imperium-icon i {
 	font-size: 25px;
 	color: var(--white);
 	background-color: var(--brown);
 	padding: 20px;
 	border-radius: 50%;
 }
-.imperial-text h5 {
+.imperium-text h5 {
 	font-size: 1.15rem;
 	margin-bottom: 0.35rem;
 }
-.imperial-text p {
+.imperium-text p {
 	font-size: 0.95rem;
 }
 @media (max-width: 700px) {
@@ -616,11 +616,11 @@ td .login-btn {
 		margin: auto;
 		text-align: center;
 	}
-	.imperial-text h5 {
+	.imperium-text h5 {
 		font-size: 1rem;
 		margin-bottom: 0.25rem;
 	}
-	.imperial-text p {
+	.imperium-text p {
 		font-size: 0.75rem;
 	}
 }
@@ -825,16 +825,16 @@ td .login-btn {
 	position: relative;
 }
 .copy-text input {
-	border: none;
+	/* border: none; */
 	outline: none;
 	color: #555;
 	font-size: 1.15rem;
-	padding: 0.5rem;
+	/* padding: 0.5rem; */
 	padding: 10px;
-	min-width: 300px;
+	min-width: 260px;
 	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 	border: gray;
-	margin: 0 5px;
+	margin: 10px 5px;
 	border-radius: 8px;
 }
 .copy-text button {
