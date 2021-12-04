@@ -9,3 +9,8 @@ closingBtn.addEventListener("click", ()=>{
     sidebar.classList.remove("show-sidebar")
 });
 
+const caretDown = document.querySelector(".fa-caret-down");
+const dropdownItems = document.querySelector(".dropdown-menu-items")
+caretDown.addEventListener("click", ()=>{
+    dropdownItems.style.display = "flex";
+})

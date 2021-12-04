@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperium Investment Management</title>
+    <meta name="description"
+        content="Investment Management is an investment platform that provides access to secure transaction and top notch investment information">
+    <meta name="keywords"
+        content="Imperium Investment Management, forex trading, Cryptocurrency, Stock market, Imperium, Investment, Management">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="../assets/dashboardStyle.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+    <nav class="flex p-4 justify-between bg-gray-900 items-center shadow-2xl">
+        <a href="" class="logo">
+            <img class="w-12" src="../assets/img/logo.png" alt="logo">
+        </a>
+        <div id="navbar" class="flex">
+            <div class="flex">
+                <a href="#" class="nav-link" role="button">
+                        <div class="border border-white rounded-md mx-2 hover:bg-gray-600">
+                            <div class="pl-1 pt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                    height="1em" fill="currentColor">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center px-4 pb-2">
+                                <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+                                    style="width: 4vh; height: 3.4vh; margin-top: -11%; border-radius: 30px;">
+                                <div class="ml-2">
+                                    <span class="block text-sm tracking-widest">BTCUSD</span><span class="block text-xs text-gray-300">Crypto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="nav-link" role="button">
+                        <div class="border border-white rounded-md mx-2 hover:bg-gray-600">
+                            <div class="pl-1 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                    height="1em" fill="currentColor">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center px-4 pb-2">
+                                <img
+                                    src="https://st2.depositphotos.com/4160903/6037/i/950/depositphotos_60374771-stock-photo-golden-shiny-dollar-symbol-isolated.jpg"
+                                    style="width: 4vh; height: 3.4vh; margin-top: -11%; border-radius: 30px;">
+                                <div class="ml-2">
+                                    <span class="block text-sm tracking-widest">GAS</span><span class="block text-xs text-gray-300">Commodity</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="nav-link" role="button">
+                        <div class="border border-white rounded-md mx-2 hover:bg-gray-600">
+                            <div class="pl-1 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                    height="1em" fill="currentColor">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center px-4 pb-2">
+                                <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
+                                    style="width: 4vh; height: 3.4vh; margin-top: -11%; border-radius: 30px;">
+                                <div class="ml-2">
+                                    <span class="block text-sm tracking-widest">ETHUSD</span><span class="block text-xs text-gray-300">Crypto</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="nav-link" role="button">
+                        <div class="border border-white rounded-md mx-2 hover:bg-gray-600">
+                            <div class="pl-1 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                    height="1em" fill="currentColor">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center px-4 pb-2">
+                                <img src="https://storage.googleapis.com/iex/api/logos/TSLA.png"
+                                    style="width: 4vh; height: 3.4vh; margin-top: -11%; border-radius: 30px;">
+                                <div class="ml-2">
+                                    <span class="block text-sm tracking-widest">TSLA</span><span class="block text-xs text-gray-300">Stock</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="nav-link" role="button">
+                        <div class="border border-white rounded-md mx-2 hover:bg-gray-600">
+                            <div class="pl-1 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                    height="1em" fill="currentColor">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center px-4 pb-2">
+                                <img src="https://storage.googleapis.com/iex/api/logos/AAPL.png"
+                                    style="width: 4vh; height: 3.4vh; margin-top: -11%; border-radius: 30px;">
+                                <div class="ml-2">
+                                    <span class="block text-sm tracking-widest">AAPL</span><span class="block text-xs text-gray-300">Stock</span></div>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <button type="button" class="border border-white rounded-md px-2 hover:bg-gray-600 ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="2em" height="2em" fill="currentColor">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="emptyDiv"></div>
+
+        <div class="notification ml-8">
+            <a href="#">
+                <svg fill="#fff" width="2em" height="2em" viewBox="0 0 1024 1024">
+                    <title>alarm</title>
+                    <path class="path1"
+                        d="M860.171 773.15c-58.576-44-92.171-111.194-92.171-184.35v-153.6c0-128.661-86.733-237.442-204.798-270.954l-0.002-36.246c0-42.347-34.451-76.8-76.8-76.8-42.347 0-76.8 34.453-76.8 76.8v36.245c-118.067 33.512-204.8 142.294-204.8 270.955v153.6c0 73.157-33.595 140.349-92.171 184.35-8.808 6.616-12.395 18.125-8.907 28.573 3.486 10.448 13.267 17.496 24.283 17.496h232.982c-1.709 8.384-2.587 16.955-2.587 25.581 0 70.579 57.421 128 128 128s128-57.421 128-128c0-8.626-0.878-17.197-2.584-25.581h232.981c11.016 0 20.795-7.046 24.283-17.496s-0.101-21.957-8.909-28.573zM460.8 128c0-14.115 11.485-25.6 25.6-25.6s25.6 11.485 25.6 25.6v26.774c-8.435-0.763-16.97-1.176-25.6-1.176s-17.166 0.413-25.6 1.176v-26.774zM563.2 844.8c0 42.347-34.453 76.8-76.8 76.8s-76.8-34.453-76.8-76.8c0-8.76 1.515-17.411 4.394-25.581h144.813c2.878 8.168 4.394 16.821 4.394 25.581zM191.571 768.019c13.075-15.826 24.437-33.051 33.744-51.27 20.362-39.858 30.685-82.906 30.685-127.949v-153.6c0-127.043 103.357-230.4 230.4-230.4s230.4 103.357 230.4 230.4v153.6c0 45.043 10.323 88.091 30.685 127.949 9.307 18.219 20.669 35.445 33.744 51.27h-589.658z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- <div class="ml-auto items-center navbar-nav">
+            <div class="nav-item dropdown">
+                <a aria-haspopup="true" aria-expanded="false" id="collasible-nav-dropdown" href="#"
+                    class="dropdown-toggle nav-link" role="button">
+                    <div class="camera-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                            height="1em" fill="currentColor">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ml-2 balance-wrapper nav-item dropdown"><a aria-haspopup="true" aria-expanded="false"
+                    id="collasible-nav-dropdown" href="#" class="dropdown-toggle nav-link" role="button">
+                    <div class="account-wrapper">
+                        <h6 class="mb-0">USD0</h6>
+                    </div>
+                </a></div><button type="button" class="btn btn-outline-success d-flex align-items-center deposit ml-3 "><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor"
+                    class="mr-3">
+                    <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z">
+                    </path>
+                    <path fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z">
+                    </path>
+                </svg>Deposit</button>
+        </div> -->
+    </nav>
+
+    <main class="w-full flex">
+        <div class="w-28 text-white bg-gray-900 h-screen" id="sidebar">
+            <ul class="text-center text-xs">
+                <li class="border-b border-gray-700 pb-2 hover:bg-gray-800 py-2">
+                    <a href="/board">
+                        <svg id="lnr-chart-bars" viewBox="0 0 1024 1024" class="w-1/4 fill-current mx-auto my-3">
+                            <title>chart-bars</title>
+                            <path class="path1"
+                                d="M896 1024h-819.2c-42.347 0-76.8-34.451-76.8-76.8v-819.2c0-42.347 34.453-76.8 76.8-76.8h819.2c42.349 0 76.8 34.453 76.8 76.8v819.2c0 42.349-34.451 76.8-76.8 76.8zM76.8 102.4c-14.115 0-25.6 11.485-25.6 25.6v819.2c0 14.115 11.485 25.6 25.6 25.6h819.2c14.115 0 25.6-11.485 25.6-25.6v-819.2c0-14.115-11.485-25.6-25.6-25.6h-819.2z">
+                            </path>
+                            <path class="path2"
+                                d="M332.8 870.4h-102.4c-14.138 0-25.6-11.461-25.6-25.6v-460.8c0-14.138 11.462-25.6 25.6-25.6h102.4c14.138 0 25.6 11.462 25.6 25.6v460.8c0 14.139-11.462 25.6-25.6 25.6zM256 819.2h51.2v-409.6h-51.2v409.6z">
+                            </path>
+                            <path class="path3"
+                                d="M537.6 870.4h-102.4c-14.138 0-25.6-11.461-25.6-25.6v-614.4c0-14.138 11.462-25.6 25.6-25.6h102.4c14.139 0 25.6 11.462 25.6 25.6v614.4c0 14.139-11.461 25.6-25.6 25.6zM460.8 819.2h51.2v-563.2h-51.2v563.2z">
+                            </path>
+                            <path class="path4"
+                                d="M742.4 870.4h-102.4c-14.139 0-25.6-11.461-25.6-25.6v-256c0-14.139 11.461-25.6 25.6-25.6h102.4c14.139 0 25.6 11.461 25.6 25.6v256c0 14.139-11.461 25.6-25.6 25.6zM665.6 819.2h51.2v-204.8h-51.2v204.8z">
+                            </path>
+                        </svg>
+                        <span class="uppercase">Board</span>
+                    </a>
+                </li>
+                <li class="border-b border-gray-700 pb-2 hover:bg-gray-800 py-2">
+                    <a class="text-center" href="/order-book">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-1/4 fill-current mx-auto my-3" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+                            <g>
+                                <g>
+                                    <path
+                                        d="m307.7,212.5c-10.2,12.7-6.6,28.7 2.2,37.5l13.6,12.6c15.3,15.4 34.4,5.3 39.6,0l59.4-58.9c7-7.1 13.8-26 0-40l-13.6-12.6c-10-10.1-27.5-10.5-38.2-1.3l-80.9-80.1c6.4-8.1 11.2-25.3-1.6-38.2l-13.6-12.6c-10.4-10.5-29.2-10.5-39.6,0l-59.4,58.9c-12.9,13-9.4,30.5 0,40l13.6,12.6c13.3,13.5 29.6,7.4 37,2.2l14.9,14.6-230.1,228.5 50,50.5 230.9-229.2 15.8,15.5zm76.2-47.7c2.9-3 7.5-3 11.5,1.1l13.6,12.6c2.4,2.5 2.5,6.9 0,9.5l-59.4,58.9c-3.1,3.2-8.3,3.2-11.5,0l-13.6-12.6c-2-2-4-6.5 0-10.5l59.4-59zm-27.2-1.1l-35.2,35-80-79.7 35.4-35.8 79.8,80.5zm-141.4-49c-3.1,3.2-8.3,3.2-11.5,0l-13.6-12.6c-2-2-4-6.5 0-10.5l59.4-58.9c2.9-3 7.5-3 11.5,1.1l13.6,12.6c2.4,2.5 2.5,6.9 0,9.5l-59.4,58.8zm-153.2,282.1l-21.9-21.1 215.4-214.3 21.7,21.3-215.2,214.1z">
+                                    </path>
+                                    <path
+                                        d="m457.2,424.2v-55.8h-188.7v55.8h-43.8v76.8h276.3v-76.8h-43.8zm-167.8-35.8h148v35.8h-148v-35.8zm191.8,91.5h-235.6v-34.7h235.6v34.7z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="uppercase">Order Book</span></a>
+                    </li>
+                <li class="border-b border-gray-700 pb-2 hover:bg-gray-800 py-2">
+                    <a class="" href="/market">
+                        <svg id="lnr-heart-pulse" viewBox="0 0 1024 1024" class="w-1/4 fill-current mx-auto my-3">
+                            <title>heart-pulse</title>
+                            <path class="path1"
+                                d="M486.4 972.8c-4.283 0-8.566-1.074-12.432-3.222-5.954-3.307-147.285-82.464-274.914-208.987-10.040-9.954-10.11-26.163-0.157-36.203s26.163-10.11 36.203-0.157c101.349 100.472 214.307 171.323 251.293 193.35 37-22.054 150.123-93.045 251.304-193.352 10.042-9.952 26.248-9.882 36.205 0.158 9.954 10.040 9.883 26.25-0.158 36.205-127.629 126.52-268.958 205.678-274.912 208.986-3.866 2.149-8.149 3.222-12.432 3.222z">
+                            </path>
+                            <path class="path2"
+                                d="M65.478 563.216c-9.61 0-18.821-5.437-23.182-14.709-28.066-59.659-42.296-119.314-42.296-177.307 0-148.218 120.582-268.8 268.8-268.8 50.173 0 103.461 18.805 150.051 52.952 27.251 19.973 50.442 44.043 67.549 69.606 17.107-25.565 40.299-49.634 67.55-69.606 46.589-34.147 99.878-52.952 150.050-52.952 148.218 0 268.8 120.582 268.8 268.8 0 57.992-14.23 117.645-42.294 177.301-6.018 12.794-21.267 18.29-34.061 12.267-12.794-6.018-18.286-21.267-12.269-34.061 24.834-52.786 37.424-105.107 37.424-155.507 0-119.986-97.616-217.6-217.6-217.6-87.187 0-171.856 71.725-193.314 136.096-3.485 10.453-13.267 17.504-24.286 17.504s-20.802-7.051-24.286-17.504c-21.456-64.371-106.125-136.096-193.314-136.096-119.986 0-217.6 97.614-217.6 217.6 0 50.4 12.592 102.723 37.426 155.512 6.019 12.794 0.526 28.043-12.267 34.061-3.522 1.659-7.23 2.443-10.88 2.443z">
+                            </path>
+                            <path class="path3"
+                                d="M538.346 768.024c-0.232 0-0.456-0.002-0.678-0.006-10.35-0.218-29.122-5.598-38.552-39.194l-62.291-221.915-41.328 167.894c-8.106 32.933-26.902 39.813-37.387 40.982-10.483 1.173-30.334-1.397-45.504-31.733l-31.005-62.010c-1.475-2.952-2.85-4.834-3.893-6-0.171 0.229-0.355 0.483-0.546 0.765-18.939 27.816-61.053 48.792-97.962 48.792h-51.2c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h51.2c21.554 0 47.152-13.942 55.638-26.408 11.397-16.739 28.026-25.638 45.629-24.48 19.142 1.286 36.246 14.274 46.928 35.634l22.781 45.562 47.93-194.71c8.069-32.784 24.658-39.907 37.15-40.109 12.512-0.24 29.302 6.379 38.43 38.888l65.763 234.286 60.323-184.738c10.504-32.168 29.779-37.707 40.334-38.144 10.542-0.435 30.224 3.482 43.357 34.672l37.062 88.026c6.946 16.496 29.573 31.522 47.474 31.522h76.8c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6h-76.8c-38.24 0-79.822-27.608-94.662-62.853l-30.301-71.968-65.208 199.699c-10.598 32.454-29 37.546-39.483 37.546z">
+                            </path>
+                        </svg>
+                        <span class="uppercase">Market</span>
+                    </a>
+                </li>
+                <li class="border-b border-gray-700 pb-2 hover:bg-gray-800 py-2">
+                    <a class="" href="/auto_copy_trader">
+                        <svg id="lnr-users" viewBox="0 0 1024 1024" class="w-1/4 fill-current mx-auto my-3">
+                            <title>users</title>
+                            <path class="path1"
+                                d="M947.2 921.6h-563.2c-42.347 0-76.8-34.453-76.8-76.8 0-2.461 0.538-60.952 47.331-118.544 26.883-33.088 63.541-59.31 108.952-77.941 54.856-22.504 122.858-33.915 202.117-33.915s147.261 11.411 202.117 33.915c45.411 18.63 82.067 44.853 108.952 77.941 46.794 57.592 47.331 116.083 47.331 118.544 0 42.347-34.453 76.8-76.8 76.8zM358.4 844.931c0.072 14.056 11.528 25.469 25.6 25.469h563.2c14.072 0 25.528-11.413 25.6-25.469-0.048-1.786-1.656-45.802-37.851-88.786-49.88-59.235-143.019-90.546-269.349-90.546s-219.469 31.31-269.349 90.546c-36.194 42.984-37.803 87-37.851 88.786z">
+                            </path>
+                            <path class="path2"
+                                d="M665.6 563.2c-112.926 0-204.8-91.874-204.8-204.8 0-112.928 91.874-204.8 204.8-204.8s204.8 91.872 204.8 204.8c0 112.926-91.874 204.8-204.8 204.8zM665.6 204.8c-84.696 0-153.6 68.904-153.6 153.6s68.904 153.6 153.6 153.6 153.6-68.904 153.6-153.6-68.904-153.6-153.6-153.6z">
+                            </path>
+                            <path class="path3"
+                                d="M230.4 921.6h-153.6c-42.347 0-76.8-34.451-76.8-76.8 0-1.915 0.386-47.446 33.92-92.16 19.373-25.832 45.778-46.299 78.483-60.834 39.126-17.389 87.438-26.206 143.597-26.206 9.16 0 18.232 0.235 26.962 0.701 14.118 0.754 24.954 12.81 24.2 26.928-0.752 14.117-12.781 24.96-26.928 24.2-7.826-0.418-15.979-0.629-24.234-0.629-199.366 0-204.666 121.826-204.8 128.131 0.072 14.054 11.528 25.469 25.6 25.469h153.6c14.138 0 25.6 11.461 25.6 25.6s-11.462 25.6-25.6 25.6z">
+                            </path>
+                            <path class="path4"
+                                d="M256 614.4c-84.696 0-153.6-68.904-153.6-153.6s68.904-153.6 153.6-153.6 153.6 68.904 153.6 153.6-68.904 153.6-153.6 153.6zM256 358.4c-56.464 0-102.4 45.936-102.4 102.4s45.936 102.4 102.4 102.4 102.4-45.936 102.4-102.4c0-56.464-45.936-102.4-102.4-102.4z">
+                            </path>
+                        </svg>
+                        <span class="uppercase">Auto Copy <br>Trader</span>
+                    </a>
+                </li>
+                <li class="border-b border-gray-700 pb-2 hover:bg-gray-800 py-2">
+                    <a dash-action="calc" href="/calc">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="w-1/4 fill-current mx-auto my-3"
+                            viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            enable-background="new 0 0 512 512">
+                            <g>
+                                <path
+                                    d="m480.1,11v79.5h-144.8c-4.9-28.3-28.6-49-56.4-49-28.6,0-51.5,21.4-56.4,49h-43.5c-4.7-28.3-27.7-49-56.4-49-28.6,0-51.5,21.4-56.4,49h-34.3v-79.5h-20.9v490h20.9v-79.5h34.3c4.9,28.3 28.6,49 56.4,49 28.6,0 51.5-21.4 56.4-49h28c4.9,28.3 28.6,49 56.4,49 27.7,0 50.5-21.4 56.1-49h160.8v79.5h20.7v-490h-20.9zm-201.2,53.4c20.9,0 36.5,16.3 36.5,38.1 0,20.7-16.7,38.1-36.5,38.1s-36.5-17.4-36.5-38.1 16.7-38.1 36.5-38.1zm-156.3,0c20.9,0 36.5,16.3 36.5,38.1 0,20.7-16.7,38.1-36.5,38.1-19.8,0-36.5-17.4-36.5-38.1s16.6-38.1 36.5-38.1zm-56.4,47.9c4.9,28.3 28.6,49 56.4,49 28.7,0 51.7-20.7 56.4-49h43.6c4.9,28.3 28.6,49 56.4,49 28.7,0 51.7-20.7 56.4-49h144.8v132.8h-28.1c-4.9-28.3-28.6-49-56.4-49-28.7,0-51.7,20.7-56.4,49h-66.5c-4.7-28.3-27.7-49-56.4-49s-51.7,20.7-56.4,49h-128.1v-132.8h34.3zm366,143.7c0,20.7-16.7,38.1-36.5,38.1s-36.5-17.4-36.5-38.1 16.7-38.1 36.5-38.1c20.9,0 36.5,17.4 36.5,38.1zm-179.3,0c0,20.7-16.7,38.1-36.5,38.1s-36.5-17.4-36.5-38.1 16.7-38.1 36.5-38.1 36.5,17.4 36.5,38.1zm-130.3,192.7c-19.8,0-36.5-17.4-36.5-38.1 0-20.7 16.7-38.1 36.5-38.1 20.9,0 36.5,17.4 36.5,38.1-0.1,20.7-16.7,38.1-36.5,38.1zm140.7,0c-19.8,0-36.5-17.4-36.5-38.1 0-20.7 16.7-38.1 36.5-38.1s36.5,17.4 36.5,38.1c0,20.7-16.7,38.1-36.5,38.1zm56.4-49c-4.7-28.3-27.7-49-56.4-49-28.6,0-51.5,21.4-56.4,49h-27.9c-4.7-28.3-27.7-49-56.4-49-28.6,0-51.5,21.4-56.4,49h-34.3v-132.8h128.1c4.9,28.3 28.6,49 56.4,49s51.5-20.7 56.4-49h66.5c4.9,28.3 28.6,49 56.4,49s51.5-20.7 56.4-49h28.1v132.8h-160.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span class="uppercase">Calc.</span>
+                    </a>
+                </li>
+                <li class="border-b border-gray-700 hover:bg-gray-800 py-2">
+                    <a dash-action="news" href="/news">
+                        <svg id="lnr-earth" viewBox="0 0 1024 1024" class="w-1/4 fill-current mx-auto my-3">
+                            <title>earth</title>
+                            <path class="path1"
+                                d="M874.038 149.962c-96.704-96.704-225.278-149.962-362.038-149.962s-265.334 53.258-362.038 149.962c-96.704 96.704-149.962 225.278-149.962 362.038s53.258 265.334 149.962 362.038c96.704 96.704 225.278 149.962 362.038 149.962s265.334-53.258 362.038-149.962c96.704-96.704 149.962-225.278 149.962-362.038s-53.258-265.334-149.962-362.038zM941.918 346.178c-9.989-17.987-35.050-26.512-67.853-37.661-35.182-11.957-47.608-48.122-61.994-89.997-12.49-36.35-25.398-73.874-56.069-97.238 83.898 52.584 149.733 131.406 185.915 224.896zM798.235 521.757c3.872 34.683 7.875 70.546-35.163 118.874-11.629 13.056-18.44 31.238-25.653 50.49-16.701 44.582-32.486 86.709-99.642 87.325-1.882-2.262-7.242-10.734-11.981-37.533-4.366-24.698-6.886-56.606-9.555-90.389-4.093-51.834-8.731-110.582-21.544-159.32-16.382-62.325-43.867-99.141-84.026-112.554-17.522-5.853-35.411-8.698-54.693-8.698-14.211 0-27.125 1.522-38.517 2.864-8.875 1.045-17.258 2.034-24.341 2.034 0 0-0.002 0-0.003 0-11.987 0-25.573 0-42.278-38.29-24.021-55.053-6.304-143.267 64.202-189.787 38.661-25.509 65.336-36.392 89.2-36.392 19.026 0 39.581 6.622 68.73 22.146 34.418 18.33 61.379 20.68 81.026 20.68 7.789 0 14.85-0.419 21.682-0.826 5.726-0.339 11.134-0.661 16.139-0.661 11.259 0 20.387 1.467 31.088 8.776 19.723 13.472 29.936 43.195 40.747 74.664 16.392 47.715 34.973 101.798 93.941 121.837 7.925 2.693 21.576 7.333 31.216 11.366-8.328 8.608-22.285 21.067-35.92 33.24-8.808 7.862-18.789 16.773-29.851 26.858-31.965 29.133-28.16 63.221-24.803 93.296zM51.25 508.070c5.52 0.992 11.493 2.141 17.605 3.446 28.776 6.141 42.235 11.686 48.117 14.798-2.706 5.277-8.187 13.056-11.81 18.195-12.669 17.976-28.435 40.349-22.437 64.984 4.046 16.618 0.632 37.032-5.248 55.883-16.994-48.005-26.277-99.624-26.277-153.378 0-1.314 0.038-2.618 0.050-3.93zM512 972.8c-175.379 0-328.173-98.494-406.014-243.062 13.422-25.554 38.314-82.054 26.68-131.547 0.806-4.97 9.248-16.95 14.349-24.186 13.874-19.688 31.141-44.189 18.35-70.152-8.976-18.222-32.957-30.534-80.181-41.17-10.939-2.464-21.594-4.47-30.65-6.019 27.424-228.090 222.107-405.464 457.466-405.464 80.776 0 156.749 20.918 222.83 57.582-16.33-7.134-31.154-8.266-43.014-8.266-6.523 0-12.957 0.382-19.176 0.752-6.085 0.362-12.374 0.734-18.645 0.734-14.542 0-32.682-1.742-56.958-14.67-37.056-19.734-64.808-28.155-92.795-28.155-34.635 0-69.744 13.414-117.397 44.856-41.197 27.181-72.229 68.779-87.381 117.133-14.779 47.166-13.2 95.418 4.448 135.867 20.824 47.728 48.336 69.013 89.203 69.014 0.003 0 0.003 0 0.006 0 10.090 0 19.923-1.158 30.333-2.386 10.482-1.235 21.32-2.512 32.525-2.512 13.869 0 26.094 1.926 38.472 6.061 22.488 7.512 39.082 32.701 50.728 77.008 11.648 44.31 16.098 100.638 20.021 150.334 3.274 41.454 6.366 80.61 13.176 110.126 4.136 17.923 9.494 31.538 16.379 41.621 10.283 15.058 25.032 23.35 41.526 23.35 45.269 0 81.429-14.594 107.47-43.374 21.659-23.934 32.722-53.466 41.613-77.194 5.245-14.003 10.67-28.482 15.941-34.402 58.219-65.373 52.203-119.258 47.813-158.603-3.226-28.888-3.285-39.123 8.408-49.781 10.864-9.904 20.741-18.722 29.454-26.499 18.568-16.576 31.984-28.554 41.397-38.83 6.464-7.058 21.603-23.584 17.395-44.28-0.037-0.184-0.088-0.358-0.126-0.539 17.558 48.701 27.154 101.174 27.154 155.851 0 254.086-206.714 460.8-460.8 460.8z">
+                            </path>
+                        </svg>
+                        <span class="uppercase">News</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w-60 p-2 bg-gray-800">
+            <div class="sidebar-wrapper">
+                <header class="flex items-center justify-between border bg-gray-900 border-gray-900 px-2 py-1 rounded mb-2">
+                    <p class="uppercase text-gray-400 text-sm">Watchlist</p>
+                    <form><input placeholder="BTCETH ..." type="text" class="bg-gray-700 w-24 px-2 py-1 rounded"></form>
+                </header>
+                <nav class="border-b">
+                    <ul id="watching-list" class="mb-0 flex text-gray-400 border-gray-700 pb-2">
+                        <li>Symbol</li>
+                        <li class="ml-auto">Last</li>
+                        <li class="ml-4">Chng (%)</li>
+                    </ul>
+                </nav>
+                <ul class="watchlist-details"></ul>
+                <div class="infocurrency-wrapper p-2">
+                    <header class="details-wrapper flex items-center justify-between w-full p-2 rounded mt-4 border-gray-700 bg-gray-600">
+                        <p class="watchlist mb-0 text-gray-400">DETAILS</p>
+                    </header>
+                    <h6></h6>
+                    <p class="mb-0 badge-code"></p>
+                    <p class="price mt-4 mb-0"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="market">
+            <div class="trade">
+                <div class="">
+                    <div class="chart">
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_65e38"></div>
+                            <div class="tradingview-widget-copyright" style="height: 73vh;"><a
+                                    href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"
+                                    style="display: none;"><span class="blue-text"> Chart</span></a>
+                                <article id="tradingview-widget-0.939539258310353" style="width: 100%; height: 100%;">
+                                    <div id="tradingview_35864-wrapper"
+                                        style="position: relative;box-sizing: content-box;width: 100%;height: 100%;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;">
+                                        <div style="width: 100%;height: 100%;background: transparent;padding: 0 !important;">
+                                            <iframe id="tradingview_35864"
+                                                src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_35864&amp;symbol=BTCUSD&amp;interval=D&amp;range=1D&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;hideideas=1&amp;theme=Dark&amp;style=3&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=prowebtrader.net&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BTCUSD"
+                                                style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;"
+                                                frameborder="0" allowtransparency="true" scrolling="no"
+                                                allowfullscreen="">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </article>
+                                <span style="display: none;">by TradingView</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trade-action ml-2 absolute right-2 top-24 ml-4 bg-gray-900">
+                        <div >
+                            <div class="bg-gray-700 mb-2 py-2 pl-2 rounded hover:bg-gray-800">
+                                <span class="dash-alt-text text-white block">Amount</span>
+                                <span class="amount block">$
+                                    <input class="input bg-gray-700 hover:bg-gray-800" type="number" name="amount" min="1" max="50000" value="1"></span>
+                            </div>
+                            <div class="dash-row flex cursor-pointer">
+                                <div class="trade-amount-minus px-9 bg-gray-700 hover:bg-gray-900 border-gray-700 mr-2 rounded">
+                                    <span class="">-</span>
+                                </div>
+                                <div class="trade-amount-add bg-gray-700 px-9 border-gray-700 hover:bg-gray-900 rounded">
+                                    <span>+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trade-amount levIsh">
+                            <div class="trade-amount-input bg-gray-700 hover:bg-gray-800 p-2 mt-3">
+                                <span class="dash-alt-text block">Leverage</span><span class="amount block">X10</span>
+                            </div>
+                        </div>
+                        <div class="cad text-center m-2">
+                            <span class="">BITUSD quantity</span><span class="amount"></span>
+                        </div>
+                        <div class="actions1 credit">
+                            <div class="buy credit bg-green-700 hover:bg-green-800 cursor-pointer m-2 text-center py-2">
+                                <div class="dtl">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" class="fill-current mx-auto w-4 mb-2" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m512 482h-30v-302h-91v302h-30v-182h-90v182h-30v-242h-90v242h-30v-152h-91v152h-30v30h512z">
+                                            </path>
+                                            <path
+                                                d="m512 120v-120h-121v30h69.789l-144.789 143.789-120-120-191.605 190.606 21.21 21.21 170.395-169.394 120 120 166-165v68.789z">
+                                            </path>
+                                        </g>
+                                    </svg><span class="text">BUY</span></div>
+                            </div>
+                            <div class="sell bg-red-700 hover:bg-red-800 cursor-pointer m-2 text-center py-2">
+                                <div class="dtl">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" class="fill-current mx-auto w-4 mb-2" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m482 330h-91v152h-30v-242h-90v242h-30v-182h-90v182h-30v-302h-91v302h-30v30h511l1-30h-30z">
+                                            </path>
+                                            <path
+                                                d="m482 218.789-166-165-120 120-174.789-173.789-21.211 21.211 196 195 120-120 144.789 143.789h-69.789v30h121v-120h-30z">
+                                            </path>
+                                        </g>
+                                    </svg><span class="text">SELL</span></div>
+                            </div>
+                            <h5 class="text-xl text-center">AutoCopy
+                                <br>Trader</h5>
+                            <div class="flex items-center justify-center w-full my-2">
+                                <label for="toggle" class="flex items-center cursor-pointer">
+                                    <div class="relative">
+                                        <input type="checkbox" id="toggle" class="sr-only">
+                                        <div class="block bg-gray-800 w-20 h-8 rounded-full" id="dot-border"></div>
+                                        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                                    </div>
+                                </label>
+                        </div>
+                    </div>
+                    <div class="h-2 w-full bg-gray-800"></div>
+                </div>
+            </div>
+            <div class="order">
+                <div class="dtls">
+                    <span class="block text-center">Open positions</span>
+                    <svg class="expand untoggled" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 15.5L12 8.5L19 15.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <div class="all-tables tablesI block">
+                        <div class="tables tablesI block" id="open-positions">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>DATE</th>
+                                        <th>ID</th>
+                                        <th>INSTRUMENT</th>
+                                        <th>UNITS</th>
+                                        <th>INVESTMENT</th>
+                                        <th>DIRECTION</th>
+                                        <th>OPEN RATE</th>
+                                        <th>MARKET RATE</th>
+                                        <th>P&amp;L</th>
+                                        <th>PROFIT/LOSS</th>
+                                        <th>STATUS</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
