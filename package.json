@@ -1,0 +1,39 @@
+{
+	"name": "imperial-investment",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/obiofiong/imperial-investment.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/obiofiong/imperial-investment/issues"
+	},
+	"homepage": "https://github.com/obiofiong/imperial-investment#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.1",
+		"ejs": "^3.1.6",
+		"express": "^4.17.2",
+		"express-session": "^1.17.2",
+		"express-validator": "^6.14.0",
+		"firebase-admin": "^10.0.1",
+		"install": "^0.13.0",
+		"mongodb": "^4.2.2",
+		"mongoose": "^6.1.2",
+		"passport": "^0.5.2",
+		"passport-local": "^1.0.0",
+		"passport-local-mongoose": "^6.1.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}

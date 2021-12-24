@@ -1072,6 +1072,7 @@ label {
 	border: 0;
 	border-radius: 0.45rem;
 	margin: 2% 0;
+	cursor : pointer;
 }
 .submit-btn:hover {
 	background-color: transparent;

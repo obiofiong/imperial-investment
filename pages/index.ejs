@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperium Investment Management</title>
+    <meta name="description"
+        content="Investment Management is an investment platform that provides access to secure transaction and top notch investment information">
+    <meta name="keywords"
+        content="Imperium Investment Management, forex trading, Cryptocurrency, Stock market, Imperium, Investment, Management">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <section class="finances">
+        <div class="text-box">
+            <h1>Celebrate your Financial <br>Freedom</h1>
+            <p>Start building your capital with a platform that’s made for you.</p>
+            <a href="#" class="hero-btn">Start Trading <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <section class="trading-market">
+        <div class="row">
+            <div class="trading-col counters">
+                <iframe class="trading-view-iframe" src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#%7B%22symbol%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22width%22%3A350%2C%22height%22%3A220%2C%22dateRange%22%3A%2212M%22%2C%22colorTheme%22%3A%22light%22%2C%22trendLineColor%22%3A%22%236B1518%22%2C%22underLineColor%22%3A%22%236B15181C%22%2C%22isTransparent%22%3Afalse%2C%22autosize%22%3Afalse%2C%22largeChartUrl%22%3A%22%22%2C%22utm_source%22%3A%22prowebtrader.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22mini-symbol-overview%22%7D" frameborder="0"></iframe>
+            </div>
+            <div class="trading-col">
+                <iframe id="tradingview_a0a0d"
+                    src="https://s.tradingview.com/mediumwidgetembed/?symbols=Apple,Google,Microsoft,Tesla,Netflix,Facebook,Bank%20Of%20America&amp;Apple=AAPL&amp;Google=GOOGL&amp;Microsoft=MSFT&amp;Tesla=NASDAQ%3ATSLA%7C12M&amp;Netflix=NASDAQ%3ANFLX%7C12M&amp;Facebook=NASDAQ%3AFB%7C12M&amp;Bank%20Of%20America=NYSE%3ABAC%7C12M&amp;topColor=%236B15181C&amp;lineColor=%236B1518&amp;chartType=area&amp;locale=en&amp;fontColor=%23787B86&amp;gridLineColor=%23F0F3FA&amp;width=1000px&amp;height=calc(400px%20-%2032px)&amp;colorTheme=light&amp;utm_source=prowebtrader.com&amp;utm_medium=widget_new&amp;utm_campaign=symbol-overview"
+                    frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+            </div>
+            <div class="trading-col">
+                <iframe scrolling="no" class="trading-view-iframe" allowtransparency="true" frameborder="0"
+                    src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=en#%7B%22symbol%22%3A%22OANDA%3AXAUUSD%22%2C%22width%22%3A350%2C%22height%22%3A220%2C%22dateRange%22%3A%2212M%22%2C%22colorTheme%22%3A%22light%22%2C%22trendLineColor%22%3A%22%236B1518%22%2C%22underLineColor%22%3A%22%236B15181C%22%2C%22isTransparent%22%3Afalse%2C%22autosize%22%3Afalse%2C%22largeChartUrl%22%3A%22%22%2C%22utm_source%22%3A%22prowebtrader.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22mini-symbol-overview%22%7D"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="row about-div">
+            <div class="about-col col-1">
+                <img src="/img/about.jpg" alt="">
+            </div>
+            <div class="about-col">
+                <h2>About Us</h2>
+                <p>
+                    Imperium Investment Management™ is a successful online trading and investment 
+                    platform for brokers interested in Foreign Exchange, Stock Market Trading, and 
+                    Cryptocurrency Trading. We give our users the potential to generate financial 
+                    returns on both rising and falling prices across indices, Forex, commodities, 
+                    shares and cryptocurrencies. 
+                </p>
+                <p>
+                    We strive to help our clients make the most out of online trading by assisting them 
+                    to access liquidity and manage risk effectively. Our comprehensive technology, 
+                    state-of-the-art security encryption, and unparalleled network allow us to deliver 
+                    an unforgettable trading experience.
+                </p>
+                <button class="about-btn">Learn more...</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="service">
+        <h2>Services We Offer</h1>
+        <p class="para">Successful investing calls for the need to have a financial trading platform with services 
+            that align with your investing goals, educational needs, and learning style.</p>
+        <div class="row">
+            <div class="service-col">
+                <img src="/img/forex.jpg" alt="">
+                <h3>Forex Trading</h3>
+                <p>
+                    We provide a fast and reliable foreign exchange trading platform. Imperium Investment 
+                    Management™ is easy to use and has a great user experience. With only a few clicks you 
+                    can join the network of buyers, sellers, companies and central banks trading currencies 
+                    every day.
+                </p>
+            </div>
+            <div class="service-col">
+                <img src="/img/stock-market.jpg" alt="">
+                <h3>Stock Market</h3>
+                <p>
+                    Investing in the stock market is the most common way for beginners to gain investment 
+                    experience. Imperium Investment Management™ provides a swift and easy environment for stockbrokers to 
+                    exchange, sell, and place orders for stocks, shares, options, bonds, commodities and 
+                    other assets. 
+                </p>
+            </div>
+            <div class="service-col">
+                <img src="/img/crypto.jpg" alt="">
+                <h3>Cryptocurrency Trading</h3>
+                <p>
+                    Cryptocurrency trading is quickly becoming one of the most popular ways to make a lot of money. 
+                    We offer a fast and secure platform to trade, invest and exchange cryptocurrencies for other assets, 
+                    like ordinary money or other digital currencies.
+                </p>
+            </div>
+        </div>
+        <button class="cta-button">Start Trading</button>
+    </section>
+
+    <section class="account-tiers">
+        <h2>Account Tiers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Account specs</td>
+                    <td class="basic">Basic</td>
+                    <td class="bronze">Bronze</td>
+                    <td class="silver">Silver</td>
+                    <td class="gold">Gold</td>
+                    <td class="platinum">Platinum</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Leverage-Up to</td>
+                    <td>1:5</td>
+                    <td>1:20</td>
+                    <td>1:50</td>
+                    <td>1:100</td>
+                    <td>1:500</td>
+                </tr>
+                <tr>
+                    <td>Spreads</td>
+                    <td></td>
+                    <td></td>
+                    <td>Silver Spreads</td>
+                    <td>Gold Spreads</td>
+                    <td>Platinum Spreads</td>
+                </tr>
+                <tr>
+                    <td>Support round the clock 24/7</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Daily Market Overview</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Education Center</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Live Trading Webinars</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Data Analysis Video</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Price Alerts</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Dedicated Account Manager</td>
+                    <td></td>
+                    <td>Junior</td>
+                    <td>Senior</td>
+                    <td>Executive</td>
+                    <td>Special</td>
+                </tr>
+                <tr>
+                    <td>Automatic Software</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Personalized Trading Strategy</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>*</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Train one-on-one</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Trading Signal from MTE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Gold Signal</td>
+                    <td>Platinum Signal</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="basic"><a href="#" class="login-btn">Login</a></td>
+                    <td class="bronze"><a href="#" class="login-btn">Login</a></td>
+                    <td class="silver"><a href="#" class="login-btn">Login</a></td>
+                    <td class="gold"><a href="#" class="login-btn">Login</a></td>
+                    <td class="platinum"><a href="#" class="login-btn">Login</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="assets">
+        <h2>Invest in the world's most popular assets</h2>
+        <p>
+            Imperium Investment Management™ has continued to provide groundbreaking investment solutions for over a decade.
+        </p>
+        <div class="row">
+            <div class="asset-widget">
+                <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22BTC%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22ETH%2FUSD%22%7D%5D%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22showSymbolLogo%22%3Atrue%2C%22width%22%3A%22100%25%22%2C%22height%22%3A104%2C%22utm_source%22%3A%22prowebtrader.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: calc(72px); width: 100%;"></iframe>
+            </div>
+        </div>
+        <button class="about-btn">Start Trading</button>
+    </section>
+
+    <section class="choose-us">
+        <h2>Why Choose Us?</h2>
+        <p>
+            We are committed to helping our users attain their goals, simplifying the complexities 
+            of investing with instinctual tools that make you efficient for decision making.
+        </p>
+        <div class="row">
+            <div class="choose-col">
+                <div class="icon-choose">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3>Easy Withdrawals</h3>
+                <p>
+                    Withdraw your money in seconds with ease. We provide a wide range of payment systems.
+                </p>
+            </div>
+            <div class="choose-col">
+                <div class="icon-choose">
+                    <i class="fas fa-dice"></i>
+                </div>
+                <h3>Risk Management</h3>
+                <p>
+                    Trading on any market involves many opportunities with the capacity to make large profits 
+                    quickly, but traders soon realise that a single loss can wipe out the portfolio. We execute a 
+                    well-designed risk management strategy that lets you remain profitable overtime.
+                </p>
+            </div>
+            <div class="choose-col">
+                <div class="icon-choose">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Dedicated Account Managers</h3>
+                <p>
+                    We provide a highly-skilled and dedicated guide, featuring around-the-clock live support and 
+                    delivering world-class solutions to clients.
+                </p>
+            </div>
+        </div>
+        <button class="cta-button">Start Trading</button>
+    </section>
+
+    <section class="experience">
+        <div class="row">
+            <div class="experience-col">
+                <div class="icon">
+                    <i class="far fa-gem"></i>
+                </div>
+                <div><span class="counter">10</span><span class="plus">+</span></div>
+                <p class="experience-text">Years of Experience</p>
+            </div>
+            <div class="experience-col">
+                <div class="icon">
+                    <i class="fas fa-line-chart"></i>
+                </div>
+                <div><span class="counter">50000</span><span class="plus">+</span></div>
+                <p class="experience-text">Profitable Trades</p>
+            </div>
+            <div class="experience-col">
+                <div class="icon">
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+                <div><span class="counter">10000</span><span class="plus">+</span></div>
+                <p class="experience-text">Monthly Successful Withdrawals</p>
+            </div>
+            <div class="experience-col" style = "border-right: none;">
+                <div class="icon">
+                    <i class="fas fa-anchor"></i>
+                </div>
+                <div><span class="counter" >100</span><span class="plus">+</span></div>
+                <p class="experience-text">Assets Available</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonial">
+        <h2>Our Client's Testimonies</h2>
+        <p>
+            There are lots of online trading platforms in the marketplace, but our users recognize and appreciate 
+            Imperium Investment Management because of our responsiveness, reliability, quality, intuitive 
+            analyzing/trading tools, and lots more.
+        </p>
+        <div class="row">
+            <div class="testimonial-col">
+                <div>
+                    <p>
+                        I have learnt things about global futures markets that has helped me save time and 
+                        money for execution, rolls and research. Imperium Investment Management runs a quick and reliable system.
+                    </p>
+                    <h3>Jonathan Mills</h3>
+                    <div class="testimonial-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <div>
+                    <p>
+                        Imperium Investment Management enables you to be independent and not rely on the money of others 
+                        in any event of financial hardship.I am pleased with the results in comparison to the experiences 
+                        one reads or hears about in the media.
+                    </p>
+                    <h3>Thomas Jackson</h3>
+                    <div class="testimonial-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <div>
+                    <p>
+                        Imperium Investment Management provides an excellent service. I have found the company's advice regarding 
+                        investment opportunities particularly helpful - everything is explained fully, no matter how complex the subject. 
+                        
+                    </p>
+                    <h3>Danielle Lawrence</h3>
+                    <div class="testimonial-icons">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="cta-button">Start Trading</button>
+    </section>
+
+    <section class="contact-info">
+        <div class="row">
+            <div class="contact-col-1">
+                <p>
+                    Imperium Investment Management™ is one of the most secure online platforms for investing and trading the top financial assets.  
+                    We offer trading and investment financial education, teaching beginners strategies that better manage risk, increase 
+                    knowledge, and build confidence. Imperium Investment Management™ is one of the fastest-growing brands in the world. We manage several 
+                    million users who appreciate our speed, accuracy, and user-experience. 
+                </p>
+            </div>
+            <div class="contact-col">
+                <h4>QUICK LINKS</h4>
+                <ul class="contact-list">
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="/contact">Contact us</a></li>
+                    <!-- <li><a href="./">Terms & Conditions</a></li> -->
+                </ul>
+            </div>
+            <div class="contact-col">
+                <h4>START TRADING</h4>
+                <ul class="contact-list">
+                    <li><a href="/open-account">Open Account</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </div>
+            <div class="contact-col">
+                <h4>CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone-alt contact-icon"></i><a href="">+17722614671</a></li>
+                    <!-- <li><i class="fas fa-envelope contact-icon"></i><a href="">ImperialInvestment<br>Management@mail.com</a></li> -->
+                    <li><i class="fas fa-location-arrow contact-icon"></i><a href="#">5200 Blue Lagoon Dr, Miami, FL.</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+
+    <script>
+        $(document).ready(function() {
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>
