@@ -4,10 +4,12 @@ const bodyParser = require("body-parser");
 const { check, validationResult } = require("express-validator");
 const loginRouter = require("./router/login");
 const registerRouter = require("./router/register");
+const logoutRouter = require("./router/logout");
 const app = express();
 const connectDB = require("./database/config");
 const flash = require("connect-flash");
-const PORT = process.env.PORT || 3300;
+const PORT = process.env.PORT || 80;
+const session = require("express-session");
 // Static files
 app.use(express.static("assets"));
 app.use("/css", express.static(process.cwd() + "/assets"));
@@ -24,20 +26,26 @@ var mongoose = require("mongoose"),
 
 require("./passport")(passport);
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// Express session
 app.use(
-	require("express-session")({
-		secret: "Any normal Word", //decode or encode session
-		resave: false,
-		saveUninitialized: false,
+	session({
+		secret: "secret",
+		resave: true,
+		saveUninitialized: true,
 	})
 );
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
+// passport.use(new LocalStrategy(User.authenticate()));
+
 // middlewares
+// app.use(passport.initialize());
+// app.use(passport.session());
+
+// Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
-
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-passport.use(new LocalStrategy(User.authenticate()));
 
 // Connect flash
 app.use(flash());
@@ -72,10 +80,7 @@ app.get("/fund-account", (req, res) => {
 app.get("/account-tiers", (req, res) => {
 	res.render("account-tiers");
 });
-app.get("/logout", (req, res) => {
-	req.logout();
-	res.redirect("/");
-});
+app.use("/logout", logoutRouter);
 function isLoggedIn(req, res, next) {
 	if (req.isAuthenticated()) {
 		return next();

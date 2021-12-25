@@ -89,6 +89,7 @@ registerRouter.post("/", async (req, res) => {
 						newUser
 							.save()
 							.then((user) => {
+								console.log(user);
 								req.flash(
 									"success_msg",
 									"You are now registered and can log in"
