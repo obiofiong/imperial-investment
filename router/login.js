@@ -7,7 +7,7 @@ loginRouter.get("/", async (req, res) => {
 	res.render("login");
 });
 loginRouter.post("/", async (req, res, next) => {
-	passport.authenticate("local", {, 
+	passport.authenticate("local", {
 		successRedirect: "/dashboard",
 		failureRedirect: "/login",
 		failureFlash: true,
