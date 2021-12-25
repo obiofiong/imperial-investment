@@ -49,7 +49,7 @@ registerRouter.post("/", async (req, res) => {
 		firstName: firstName,
 		lastName: lastName,
 		email: email,
-		// password: password,
+		password: password,
 		country: country,
 		phone: phone,
 	};
