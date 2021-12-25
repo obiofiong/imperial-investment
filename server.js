@@ -6,8 +6,8 @@ const loginRouter = require("./router/login");
 const registerRouter = require("./router/register");
 const app = express();
 const connectDB = require("./database/config");
+const flash = require("connect-flash");
 const PORT = process.env.PORT || 3300;
-const config = require("./firebase/config");
 // Static files
 app.use(express.static("assets"));
 app.use("/css", express.static(process.cwd() + "/assets"));
@@ -22,6 +22,7 @@ var mongoose = require("mongoose"),
 	passportLocalMongoose = require("passport-local-mongoose"),
 	User = require("./models/user.js");
 
+require("./passport")(passport);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
 	require("express-session")({
@@ -38,9 +39,16 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 passport.use(new LocalStrategy(User.authenticate()));
 
-app.use(passport.initialize());
-app.use(passport.session());
+// Connect flash
+app.use(flash());
 
+// Global variables
+app.use(function (req, res, next) {
+	res.locals.success_msg = req.flash("success_msg");
+	res.locals.error_msg = req.flash("error_msg");
+	res.locals.error = req.flash("error");
+	next();
+});
 // Set view
 // app.set("views", "./pages");
 app.set("view engine", "ejs");
@@ -77,6 +85,7 @@ function isLoggedIn(req, res, next) {
 app.get("/dashboard", (req, res) => {
 	res.render("dashboard");
 });
+
 const uri =
 	"mongodb+srv://admin:adminadmin@imperiuminvestmentmanag.dzol4.mongodb.net/imperiuminvestementmanagement?retryWrites=true&w=majority";
 
@@ -87,7 +96,8 @@ const start = async () => {
 		await connectDB(uri);
 		app.listen(PORT, () => {
 			console.log(
-				"Imperium Investment management is running on port 3300"
+				"Imperium Investment management is running on port ",
+				PORT
 			);
 		});
 	} catch (err) {
