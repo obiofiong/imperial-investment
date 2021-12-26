@@ -39,10 +39,6 @@ app.use(
 // passport.deserializeUser(User.deserializeUser());
 // passport.use(new LocalStrategy(User.authenticate()));
 
-// middlewares
-// app.use(passport.initialize());
-// app.use(passport.session());
-
 // Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
@@ -72,21 +68,22 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
 	res.render("contact");
 });
-app.use("/login", loginRouter);
-app.use("/signup", registerRouter);
 app.get("/fund-account", (req, res) => {
 	res.render("fund-account");
 });
 app.get("/account-tiers", (req, res) => {
 	res.render("account-tiers");
 });
+//  EXTERNAL ROUTED FILES
+app.use("/login", loginRouter);
+app.use("/signup", registerRouter);
 app.use("/logout", logoutRouter);
-function isLoggedIn(req, res, next) {
-	if (req.isAuthenticated()) {
-		return next();
-	}
-	res.redirect("/login");
-}
+// function isLoggedIn(req, res, next) {
+// 	if (req.isAuthenticated()) {
+// 		return next();
+// 	}
+// 	res.redirect("/login");
+// }
 app.get("/dashboard", (req, res) => {
 	res.render("dashboard");
 });

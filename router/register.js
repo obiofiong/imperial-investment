@@ -8,7 +8,12 @@ const passport = require("passport");
 const User = require("../models/user.js");
 // const urlencodedParser = bodyParser.urlencoded({ encoded: false });
 const registerRouter = express.Router();
+const { forwardAuthenticated } = require("../config/auth");
 
+// Register Page
+// registerRouter.get("/", forwardAuthenticated, (req, res) =>
+// 	res.render("signup")
+// );
 registerRouter.get("/", async (req, res) => {
 	res.render("open-account");
 });
