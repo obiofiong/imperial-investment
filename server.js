@@ -56,7 +56,8 @@ app.use(function (req, res, next) {
 // Set view
 // app.set("views", "./pages");
 app.set("view engine", "ejs");
-app.set("views", process.cwd() + "/pages");
+// app.set("views", process.cwd() + "/pages");
+app.set("views", "./pages");
 
 // routes
 app.get("", (req, res) => {
