@@ -326,6 +326,7 @@ h3 {
 	font-size: 1.25rem;
 	margin: 1rem 0px;
 	border-radius: 0.5rem;
+	cursor: pointer;
 	-webkit-transition: background, color, border, 0.3s ease-out;
 	-moz-transition: background, color, border, 0.3s ease-out;
 	-o-transition: background, color, border, 0.3s ease-out;
