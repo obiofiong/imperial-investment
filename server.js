@@ -8,7 +8,7 @@ const logoutRouter = require("./router/logout");
 const app = express();
 const connectDB = require("./database/config");
 const flash = require("connect-flash");
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3300;
 const session = require("express-session");
 // Static files
 app.use(express.static("assets"));
